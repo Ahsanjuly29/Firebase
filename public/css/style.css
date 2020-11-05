@@ -1,0 +1,144 @@
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 200px;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+}
+.box-border {
+    width: 558px;
+    height: 402px;
+    border: 1px solid rgb(56, 54, 221);
+    overflow-y: scroll;
+}
+.item-border {
+    width: 98%;
+    height: 100vh;
+    border: 1px solid #E4E6E9;
+    float: right;
+    overflow-y:scroll ;
+}
+.side-content {
+    height: 100vh;
+}
+td{
+    font-weight: 800;
+}
+.bill-border {
+    width: 558px;
+    height: auto;
+    padding-bottom: 2%;
+    border: 1px solid rgb(56, 54, 221);
+    background-color: #E4E6E9;
+}
+
+.price {
+    color: grey;
+    font-size: 22px;
+}
+
+.card button {
+    border: 5px solid whitesmoke;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+}
+
+.card button:hover {
+    opacity: 0.7;
+}
+
+.cards-list {
+    z-index: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 110px;
+    height: 150px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.4s;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.card .card_image {
+    width: 110px;
+    height: 95px;
+    border-radius: 10px;    
+}
+
+.card .card_image img {
+    width: 110px;
+    height: 95px;
+    border-radius: 10px;
+    object-fit: cover;  
+}
+
+#product_name {
+    letter-spacing: -1px;
+    line-height: 14px;
+    font-weight: bold;
+    font-size: 14px;
+    font-family: sans-serif;
+}
+
+.card .card_title {
+    text-align: right;
+    border-radius: 0px 0px 40px 40px;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    margin-top: -115px;
+}
+
+.card:hover {
+    transform: scale(0.9, 0.9);
+    box-shadow: 5px 5px 20px 10px rgba(0, 0, 0, 0.25), -5px -5px 20px 10px rgba(0, 0, 0, 0.22);
+}
+
+.title-white {
+    color: black;
+}
+
+.title-black {
+    color: black;
+}
+
+#item {
+    margin-left: 10px;
+}
+
+
+@media all and (max-width: 400px) {
+    .card-list {
+        /* On small screens, we are no longer using row direction but column */
+        flex-direction: column;
+    }
+}
+
+
+/*
+.card {
+  margin: 30px auto;
+  width: 300px;
+  height: 300px;
+  border-radius: 40px;
+  background-image: url('https://i.redd.it/b3esnz5ra34y.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-repeat: no-repeat;
+box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.22);
+  transition: 0.4s;
+}
+*/
